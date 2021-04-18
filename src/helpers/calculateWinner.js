@@ -5,12 +5,11 @@ export function calculateWinner (squares) {
     const [a, b, c, d, e] = possibleWins[i];
 
     if (squares[a].clicked && squares[b].clicked && squares[c].clicked && squares[d].clicked && squares[e].clicked) {
-      alert("we have a winner");
       possibleWins.splice(i, 1);
-      return;
+      return true;
     }
   }
-  return null;
+  return false;
 }
 
 let possibleWins = [
