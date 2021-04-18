@@ -1,10 +1,16 @@
 import React from 'react';
-import Square from './Square';
+import './board.css';
+import Square from '../Square/Square';
 
 const Board = ({ squaresText, onClick }) => (
 	<div className="board">
 		{squaresText.map((square, i) => (
-			<Square key={i} value={square.value} onClick={() => onClick(i)} />
+			<Square
+				key={i}
+				value={square.value}
+				clicked={square.clicked}
+				onClick={() => onClick(i)}
+			/>
 		))}
 	</div>
 );

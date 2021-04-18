@@ -11,7 +11,7 @@ const topicList = [
   { value: '9', clicked: false },
   { value: '10', clicked: false },
   { value: '11', clicked: false },
-  { value: '12', clicked: false },
+  { value: '12', clicked: true },
   { value: '13', clicked: false },
   { value: '14', clicked: false },
   { value: '15', clicked: false },

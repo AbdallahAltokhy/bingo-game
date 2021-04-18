@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { calculateWinner } from '../helpers/helper';
-import topicList from '../helpers/topic-list';
-import Board from './Board';
+import './bingo.css';
+import { calculateWinner } from '../../helpers/helper';
+import topicList from '../../helpers/topic-list';
+import Board from '../Board/Board';
 
 const Bingo = () => {
 	const [squaresText, setSquaresText] = useState(topicList);
@@ -18,7 +19,7 @@ const Bingo = () => {
 
 	return (
 		<>
-			<h1 style={{ textAlign: 'center' }}>React Bingo Game</h1>
+			<h1>React Bingo Game</h1>
 			<Board squaresText={squaresText} onClick={handleClick} />
 		</>
 	);

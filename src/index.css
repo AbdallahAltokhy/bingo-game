@@ -5,28 +5,18 @@
 }
 
 body {
-	background-color: black;
+	background: rgb(190, 231, 192);
+	background: linear-gradient(
+		90deg,
+		rgba(190, 231, 192, 1) 0%,
+		rgba(235, 255, 237, 1) 100%
+	);
+
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	display: flex;
 	justify-content: center;
-	min-height: 100vh;
-	padding: 2rem;
-}
-
-.board {
-	border: 1rem solid #ff652f;
-	background: #ff652f;
-	width: 500px;
-	height: 500px;
-	display: grid;
-	grid-template: repeat(5, 1fr) / repeat(5, 1fr);
-	gap: 1rem;
-}
-
-.square-div {
-	border: 1px solid black;
 	text-align: center;
-	justify-content: center;
-	cursor: pointer;
+	min-height: 100vh;
+	margin: 0;
+	padding: 2rem;
 }

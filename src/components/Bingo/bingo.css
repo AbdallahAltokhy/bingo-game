@@ -1,0 +1,11 @@
+h1 {
+	text-decoration: underline wavy;
+	color: darkcyan;
+}
+
+@media only screen and (max-width: 450px) {
+	h1 {
+		margin: 20px auto;
+		font-size: 1.8rem;
+	}
+}
