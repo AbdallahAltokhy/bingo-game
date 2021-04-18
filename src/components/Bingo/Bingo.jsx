@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './bingo.css';
-import { calculateWinner } from '../../helpers/helper';
+import { calculateWinner } from '../../helpers/calculateWinner';
 import topicList from '../../helpers/topic-list';
 import Board from '../Board/Board';
 
