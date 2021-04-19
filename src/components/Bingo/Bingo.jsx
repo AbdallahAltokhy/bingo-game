@@ -28,6 +28,9 @@ const Bingo = () => {
 			<h1>React Bingo Game</h1>
 			<Confetti active={isMatch} config={config} />
 			<Board squaresText={squaresText} onClick={handleClick} />
+			<button onClick={() => (window.location = '/')} className="reset-btn">
+				Reset
+			</button>
 		</>
 	);
 };

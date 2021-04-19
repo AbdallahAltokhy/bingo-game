@@ -1,4 +1,6 @@
-const topicList = [
+import _ from 'lodash';
+
+let firstHalf = [
   { value: '0', clicked: false },
   { value: '1', clicked: false },
   { value: '2', clicked: false },
@@ -10,8 +12,9 @@ const topicList = [
   { value: '8', clicked: false },
   { value: '9', clicked: false },
   { value: '10', clicked: false },
-  { value: '11', clicked: false },
-  { value: '12', clicked: true },
+  { value: '11', clicked: false }]
+let middleSquare = { value: '12', clicked: true }
+let secondHalf = [
   { value: '13', clicked: false },
   { value: '14', clicked: false },
   { value: '15', clicked: false },
@@ -25,5 +28,7 @@ const topicList = [
   { value: '23', clicked: false },
   { value: '24', clicked: false },
 ];
+
+let topicList = [..._.shuffle(firstHalf), middleSquare, ..._.shuffle(secondHalf)];
 
 export default topicList;
