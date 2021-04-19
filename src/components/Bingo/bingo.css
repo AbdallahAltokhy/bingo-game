@@ -22,13 +22,13 @@ h1 {
 	}
 
 	.reset-btn {
-		margin-top: 110px;
+		margin-top: 20px;
 		width: 300px;
 	}
 }
 @media only screen and (max-width: 380px) {
 	.reset-btn {
-		margin-top: 160px;
-		width: 180px;
+		margin-top: 20px;
+		width: 250px;
 	}
 }
